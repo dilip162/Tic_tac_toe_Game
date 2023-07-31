@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s linear;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+   background: url('/Young\ Passion.png');
+   background-size: cover;   
+
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.container>h1{
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #505050;
+}
+
+.grid{
+    display: flex;
+}
+
+.col{
+    height: 10rem;
+    width: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5.5rem;
+    font-weight: 800;
+    cursor: pointer;
+    background-color: white;
+    margin: 0.3rem;
+    border-radius: 0.4rem;
+    transition: all 0.3s ease-in-out;
+    color:rgb(104, 103, 103)
+}
+
+
+.col:hover{
+    background-color: rgba(225, 217, 217, 0.599);
+}
+
+#winner{
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 2.5rem;
+    color: #355E3B;
+}
+
+#restart{
+    padding: 0.6rem 1.5rem;
+    font-size: 1.6rem;
+    background-color: aquamarine;
+    border: none;
+    outline: none;
+    border-radius: 0.4rem;
+    font-weight: 600;
+    cursor: pointer;
+    
+    margin: 0 auto;
+    display: none;
+}
+
+
+
+
+
+
+/* ----------- media queries ------------ */
+
+@media(max-width:994px){
+    html{
+        font-size: 55%;
+    }
+}
+
+@media(max-width:768px){
+    html{
+        font-size: 50%;
+    }
+}
+
+@media(max-width:576px){
+    html{
+        font-size: 45%;
+    }
+}
